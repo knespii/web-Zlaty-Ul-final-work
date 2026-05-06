@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zlatý úl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="top-bar-content">
+            <img src="obrazky/logo-zlaty-ul-img.png" class="top-bar-logo" alt="logo">
+            <a href="index.html" class="top-bar-link">
+                <h1>Zlatý úl</h1>
+            </a>
+
+            <nav class="top-bar-nav">
+                <a href="index.html#uvod" class="top-bar-link">Náš příběh</a>
+                <a href="index.html#nabidka-medu" class="top-bar-link">Produkty</a>
+            </nav>
+
+            <div class="top-bar-button">
+                <a href="objednávky.html" class="button-link">objednávka</a>
+            </div>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <div class="spacer"></div>
+        <section class="hero" id="uvod">
+            <img src="obrazky/intro-hero-img.png" class="hero-img" alt="med">
+            <div class="hero-content">
+                <h2>Nejlepší med z naší farmy</h2>
+                <p>Naše včely pracují tvrdě, aby vám přinesly ten nejkvalitnější med.</p>
+                <a href="#nabidka-medu" class="hero-button">
+                    Výběr medů <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <section class="about" id="o-nas">
+            <div class="about-content">
+                <h2>Rodinná tradice</h2>
+                <p>Zakládáme si na poctivém včelařství. Naše včelstva mají domov v čisté přírodě, díky čemuž vám
+                    můžeme
+                    nabídnout med té nejvyšší kvality, přesně takový, jaký ho milovaly generace před námi.</p>
+            </div>
+            <div class="about-img">
+                <img src="obrazky/about-farm-img.png" alt="Naše včelí farma">
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <section class="about" id="o-nas">
+            <div class="about-img">
+                <img src="obrazky/about-honey.png" alt="Naše včelí farma">
+            </div>
+            <div class="about-content">
+                <h2>Čistá příroda bez kompromisů</h2>
+                <p>Náš med neprochází žádnou vysokoteplotní pasterizací ani filtrací, která by ho zbavila cenných látek.
+                    Vytáčíme ho šetrně a plníme přímo do sklenic, aby si zachoval všechny enzymy, vitamíny a pravou chuť
+                    rozkvetlých luk.</p>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <section class="products" id="nabidka-medu">
+            <article class="product-card scroll-reveal">
+                <div class="product-img">
+                    <img src="obrazky/lipovy-med-img.png" alt="Lípový med">
+                </div>
+                <div class="content-area">
+                    <h3>Lípový med</h3>
+                    <p>Světle jantarový med s nezaměnitelnou vůní rozkvetlých lip a jemně kořeněnou chutí.</p>
+                    <div class="product-card-footer">
+                        <span class="price">260 CZK/kg</span>
+                    </div>
+                </div>
+                <div class="product-button-area">
+                    <a class="product-button" href="objednávky.html?honey=linden">zarezervovat</a>
+                </div>
+            </article>
+
+            <article class="product-card scroll-reveal">
+                <div class="product-img">
+                    <img src="obrazky/plastvovy-med.png" alt="plastvový med">
+                </div>
+                <div class="content-area">
+                    <h3>Plástvový med</h3>
+                    <p>Nejsurovější forma medu přímo z včelího plástve. Kousek panenského vosku zalitý čerstvým medem
+                        uchovává maximum enzymů a pylu. Skutečný zážitek pro znalce.</p>
+                    <div class="product-card-footer">
+                        <span class="price">350 CZK/kg</span>
+                    </div>
+                </div>
+                <div class="product-button-area">
+                    <a class="product-button" href="objednávky.html?honey=honeycomb">zarezervovat</a>
+                </div>
+            </article>
+
+            <article class="product-card scroll-reveal">
+                <div class="product-img">
+                    <img src="obrazky/pasterizovany-med.png" alt="Pasterizovaný med">
+                </div>
+                <div class="content-area">
+                    <h3>Pasterizovaný med</h3>
+                    <p>Květový med upravený šetrným mícháním do krémové konzistence. Má perleťovou barvu, skvěle chutná
+                        a
+                        hlavně - vůbec neteče a nekrystalizuje. Ideální na ranní toust.</p>
+                    <div class="product-card-footer">
+                        <span class="price">240 CZK/kg</span>
+                    </div>
+                </div>
+                <div class="product-button-area">
+                    <a class="product-button" href="objednávky.html?honey=creamed">zarezervovat</a>
+                </div>
+            </article>
+        </section>
+        <div class="spacer"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-content-box">
+            <h4>O nás</h4>
+            <p>Zlatý úl je rodinná včelí farma, která se specializuje na výrobu medu nejvyšší kvality, už od roku
+                1984
+            </p>
+        </div>
+
+        <div class="site-footer-content-box">
+            <h4>Kontakt</h4>
+            <p><a href="mailto:info@zaltyul.cz" class="footer-link">info@zaltyul.cz</a></p>
+            <p><a href="tel:+676767676" class="footer-link">+676 767 676</a></p>
+        </div>
+
+        <div class="site-footer-content-box">
+            <h4>Navigace</h4>
+            <ul>
+                <li><a href="#uvod" class="footer-link">Úvod</a></li>
+                <li><a href="#o-nas" class="footer-link">O nás</a></li>
+                <li><a href="#nabidka-medu" class="footer-link">Nabídka medu</a></li>
+            </ul>
+            <p>2026 &copy; Zlatý úl</p>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="index.html#uvod" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Domů</span>
+        </a>
+        <a href="index.html#nabidka-medu" class="nav-item">
+            <i class="fa-solid fa-jar"></i>
+            <span>Produkty</span>
+        </a>
+        <a href="objednávky.html" class="nav-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Koupit</span>
+        </a>
+        <a href="index.html#o-nas" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span>O nás</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+
+</html>

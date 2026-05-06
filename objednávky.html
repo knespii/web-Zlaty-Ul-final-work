@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zlatý úl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="top-bar-content">
+            <img src="obrazky/logo-zlaty-ul-img.png" class="top-bar-logo" alt="logo">
+            <a href="index.html" class="top-bar-link">
+                <h1>Zlatý úl</h1>
+            </a>
+
+            <nav class="top-bar-nav">
+                <a href="index.html#uvod" class="top-bar-link">Náš příběh</a>
+                <a href="index.html#nabidka-medu" class="top-bar-link">Produkty</a>
+            </nav>
+
+            <div class="top-bar-button">
+                <a href="objednávky.html" class="button-link">objednávka</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper"></main>
+    <div class="spacer"></div>
+
+    <body>
+        <div class="order-main-wrapper">
+            <section class="order-section">
+                <h2>Objednávkový formulář</h2>
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="name">Jméno:</label>
+                        <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Vaše objednávka:</label>
+                        <div id="order-items-container">
+                        </div>
+                        <button type="button" id="add-item-btn" class="secondary-button">
+                            <i class="fa-solid fa-plus"></i> Přidat další med
+                        </button>
+                    </div>
+
+                    <div class="form-group total-price-box">
+                        <h3>Celková cena: <span id="total-price">0</span> Kč</h3>
+                    </div>
+
+                    <button type="submit" class="submit-button">Odeslat objednávku</button>
+                </form>
+            </section>
+
+            <section class="info-section">
+                <h2>Informace o osobním odběru</h2>
+
+                <div class="info-block">
+                    <h3>Jak to funguje:</h3>
+                    <ol class="info-list">
+                        <li>Vyplňte objednávkový formulář se svými údaji.</li>
+                        <li>Vaši objednávku potvrdíme e-mailem do 24 hodin.</li>
+                        <li>Med si vyzvednete přímo u nás na farmě.</li>
+                        <li>Platba probíhá při převzetí (hotově nebo kartou).</li>
+                        <li>Objednávka bude zarezervovaná po dobu 3dnů </li>
+                    </ol>
+                </div>
+
+                <div class="info-block">
+                    <h3>Výdejní doba:</h3>
+                    <ul class="time-list">
+                        <li><strong>Pondělí - Pátek:</strong> 14:00 - 18:00</li>
+                        <li><strong>Sobota:</strong> 10:00 - 16:00</li>
+                        <li><strong>Neděle:</strong> Zavřeno</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Lokalita:</h3>
+                    <address class="farm-address">
+                        Včelí farma Zlatý úl<br>
+                        <a href="https://share.google/msrsGoFZE6HMPkrMA" target="_blank">
+                            1600 Pennsylvania Avenue NW, Washington, DC 20500
+                        </a><br>
+                        20500 DC<br>
+                    </address>
+                </div>
+            </section>
+        </div>
+        <div class="spacer"></div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer-content-box">
+                <h4>O nás</h4>
+                <p>Zlatý úl je rodinná včelí farma, která se specializuje na výrobu medu nejvyšší kvality, už od
+                    roku
+                    1984
+                </p>
+            </div>
+
+            <div class="site-footer-content-box">
+                <h4>Kontakt</h4>
+                <p><a href="mailto:info@zaltyul.cz" class="footer-link">info@zaltyul.cz</a></p>
+                <p><a href="tel:+676767676" class="footer-link">+676 767 676</a></p>
+            </div>
+
+            <div class="site-footer-content-box">
+                <h4>Navigace</h4>
+                <ul>
+                    <li><a href="index.html#úvod" class="footer-link">Úvod</a></li>
+                    <li><a href="index.html#o-nas" class="footer-link">O nás</a></li>
+                    <li><a href="index.html#nabidka-medu" class="footer-link">Nabídka medu</a></li>
+                </ul>
+                <p>2026 &copy; Zlatý úl</p>
+            </div>
+        </footer>
+
+        <nav class="bottom-nav">
+            <a href="index.html#uvod" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Domů</span>
+            </a>
+            <a href="index.html#nabidka-medu" class="nav-item">
+                <i class="fa-solid fa-jar"></i>
+                <span>Produkty</span>
+            </a>
+            <a href="objednávky.html" class="nav-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Koupit</span>
+            </a>
+            <a href="index.html#o-nas" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>O nás</span>
+            </a>
+        </nav>
+    </body>
+
+</html>
