@@ -216,8 +216,15 @@ h6 {
   margin: 0 auto;
 }
 .about-img {
-  border-radius: 0 0 10px 0;
   overflow: hidden;
+}
+
+.about-img:last-child {
+  border-radius: 0;
+}
+
+.about-img:first-child {
+  border-radius: 0 0 0 10px;
 }
 
 .about-content {
